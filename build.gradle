@@ -15,21 +15,7 @@ dependencies {
 
     testImplementation 'org.junit.jupiter:junit-jupiter'
 }
-dependencies {
-    testImplementation 'org.testng:testng:7.1.0'
 
-}
-dependencies {
-    testImplementation 'junit:junit:4.13'
-}
-
-test {
-    useJUnit()
-}
-
-test {
-    useTestNG()
-}
 
 test {
     useJUnitPlatform()
