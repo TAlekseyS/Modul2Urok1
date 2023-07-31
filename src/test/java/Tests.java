@@ -1,5 +1,8 @@
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.Assertions;
+import org.junit.Assert;
+import org.junit.Test;
+
+//import org.junit.jupiter.api.Test;
+//import org.junit.jupiter.api.Assertions;
 
 import ru.netology.service.CashbackHackService;
 
@@ -12,8 +15,11 @@ public class Tests {
         int actual = service.remain(amount);
         int expected = 100;
 
-        Assertions.assertEquals(expected,actual);
+        //Assertions.assertEquals(expected, actual);
+        Assert.assertEquals(expected, actual);
+
     }
+
 
     @Test
     public void secondTest() {
@@ -23,7 +29,8 @@ public class Tests {
         int actual = service.remain(amount);
         int expected = 120;
 
-        Assertions.assertEquals(expected,actual);
+        //Assertions.assertEquals(expected, actual);
+        Assert.assertEquals(expected, actual);
     }
 
     @Test
@@ -34,7 +41,9 @@ public class Tests {
         int actual = service.remain(amount);
         int expected = 0;
 
-        Assertions.assertEquals(expected,actual);
+        //Assertions.assertEquals(expected, actual);
+        Assert.assertEquals(expected, actual);
     }
 
 }
+
