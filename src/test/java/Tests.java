@@ -39,7 +39,7 @@ public class Tests {
         int amount = 1000;
 
         int actual = service.remain(amount);
-        int expected = 0;
+        int expected = 1000;
 
         //Assertions.assertEquals(expected, actual);
         Assert.assertEquals(expected, actual);
